@@ -19,7 +19,8 @@ public class BrowserFactory {
 	public static WebDriver startBrowser(String browser,String applicationURL)
 	{
 		
-		System.out.println("**** Starting "+ browser + "with "+applicationURL + "****");
+		
+		System.out.println("**** Starting "+ browser + " with "+applicationURL + "****");
 		
 		if(browser.equalsIgnoreCase("Chrome"))
 		{

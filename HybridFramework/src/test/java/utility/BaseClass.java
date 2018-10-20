@@ -74,6 +74,9 @@ public class BaseClass {
 	@BeforeClass
 	public void startApplication(String browserDetails)
 	{
+		
+		System.out.println("Browser accepted from Jenkins is "+browserDetails);
+		
 		driver = BrowserFactory.startBrowser(browserDetails, DataProviderFactory.getConfig().getStagingURL());
 	}
 	
