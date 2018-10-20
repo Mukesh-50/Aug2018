@@ -18,6 +18,7 @@ public class TestBrowserFactory {
 		System.out.println(driver);
 		Assert.assertTrue(driver!=null);
 		BrowserFactory.closeBrowser();
+		// commited for polling
 	}
 	
 	
