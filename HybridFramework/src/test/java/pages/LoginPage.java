@@ -22,10 +22,14 @@ public class LoginPage {
 	
 	public void loginToApplication(String username,String password)
 	{
-		uname.sendKeys(username);
-		pass.sendKeys(password);
-		loginButton.click();
+		Helper.syncWebElement(driver, uname).sendKeys(username);
+		
+		Helper.syncWebElement(driver, pass).sendKeys(password);
+		
+		Helper.syncWebElement(driver, loginButton).click();
+		
 		System.out.println("Username and Password Entered");
+		
 		Helper.waitForCurentURL(driver, "dashboard");
 	}
 		

@@ -52,10 +52,10 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.22.1</version>
 				<configuration>
-				
-				<systemPropertyVariables>
-				 <RunTimeBrowser>${Browser}</RunTimeBrowser>				
-				</systemPropertyVariables>
+
+					<systemPropertyVariables>
+						<RunTimeBrowser>${Browser}</RunTimeBrowser>
+					</systemPropertyVariables>
 
 					<suiteXmlFiles>
 						<suiteXmlFile>XMLFiles/${xmlFiles}</suiteXmlFile>
